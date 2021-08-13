@@ -3,7 +3,7 @@ FROM cern/cc7-base
 LABEL maintainer.name="Federico Meloni"
 LABEL maintainer.email="federico.meloni@cern.ch"
 
-COPY centos7/packages packages
+COPY packages packages
 
 RUN yum update -q -y \
     && yum install -y epel-release \
